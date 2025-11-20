@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Maneva hits </title>
+    <link href="banda maneva.jpeg" rel="icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    
+    <!-- Menu de controle para navegação e acessibilidade -->
+    <section class="top-control">
+        <nav class="nav-shortcuts">
+            <button onclick="goTo('conteudo-principal')" aria-label="Ir para o conteúdo principal">Ir para o conteúdo [1]</button>
+            <button onclick="goTo('menu')" aria-label="Ir para o menu principal">Ir para o menu [2]</button>
+            <button onclick="goTo('search-box')" aria-label="Ir para a busca">Ir para a busca [3]</button>
+            <button onclick="goTo('rodape')" aria-label="Ir para o rodapé">Ir para o rodapé [4]</button>
+        </nav>
+        <nav class="accessibility-tools">
+            <button onclick="toggleContrast()" aria-label="Ativar/desativar alto contraste">Alto Contraste</button>
+            <button onclick="changeFontSize(1)" aria-label="Aumentar fonte">A+</button>
+            <button onclick="changeFontSize(-1)" aria-label="Diminuir fonte">A-</button>
+            <button onclick="resetFontSize()" aria-label="Redefinir tamanho da fonte">A0</button>
+        </nav>
+    </section>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Maneva | Essência do reggae</h1>
+        <!-- Campo de busca -->
+        <form class="search-form" role="search" aria-label="Formulário de busca">
+            <label for="search-box" class="sr-only">Buscar:</label>
+            <input id="search-box" type="text" placeholder="Buscar..." aria-label="Campo de busca">
+            <button type="submit">Buscar</button>
+        </form>
+    </header>
+
+    <!-- Menu de navegação -->
+    <nav id="menu" aria-label="Menu principal">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <main id="conteudo-principal">
+        <section class="section1">
+            <img src="tempo de paz.jpeg" alt="Capa do álbum Tempo de Paz da banda Maneva"> 
+            <h2>Tempo de paz</h2>
+            <p>
+                 É o segundo álbum de estúdio da banda Maneva, lançado em 2009.
+                 É um disco de reggae com 12 faixas e cerca de 42 minutos de duração.
+                As músicas abordam temas como paz interior, reflexão, saudade e a busca por equilíbrio emocional, sempre com uma pegada leve e orgânica.
+
+            </p>
+        </section>
+
+        <section class="section2">
+            <img src="cores do universo.jpeg" alt="Capa do álbum Cores do Universo da banda Maneva">
+            <h2>Cores do universo</h2>
+            <p>
+                É um álbum vibrante do Maneva que mistura reggae, sentimento e boa energia. Cada faixa traz reflexões leves, positividade e melodias que iluminam o dia, uma viagem musical cheia de cor e vibração. É um disco que abraça, inspira e convida a sentir cada emoção com mais leveza. Perfeito para quem busca boas vibrações e músicas que elevam o astral.
+            </p>
+        </section>
+        <section class="section3">
+            <img src="Origem.jpeg" alt="Capa do álbum Origem da banda Maneva">
+            <h2>Origem</h2>
+            <p>
+                É um álbum que resgata a essência do Maneva, unindo reggae, poesia e energia espiritual. Com letras profundas e melodias envolventes, o disco celebra raízes, evolução e conexão com a vida. Cada faixa é um retorno à autenticidade da banda, trazendo verdade, vibração positiva e a força de recomeçar. Um álbum feito para sentir, refletir e se reconectar consigo mesmo.
+            </p>
+        </section>
+        <section class="section4">
+            <img src="o cabeça de folha.jpeg" alt="Capa do álbum O Cabeça de Folha da banda Maneva">
+            <h2>O Cabeça de Folha</h2>
+            <p>
+                É um álbum leve e marcante, onde o Maneva mistura reggae, humor e consciência em um som cheio de identidade. Com melodias envolventes e mensagens que passam por liberdade, simplicidade e boas vibrações, o disco entrega aquela energia gostosa que virou marca da banda. Cada faixa traz um toque de reflexão e alegria, criando uma experiência musical autêntica e inesquecível.
+            </p>
+        </section>
+
+
+        <!-- Barra lateral -->
+        <aside>
+            <h3>Top 5 músicas</h3>
+            <ul>
+                <img src="pisando descalço.jpeg" alt="Capa do single Pisando Descalço da banda Maneva">
+                <li><a href="#">Pisando Descalço</a></li>
+                <img src="o destino não quis.jpeg" alt="Capa da música o destino não quis Maneva">
+                <li><a href="#">O destino não quis</a></li>
+                <img src="luz que me traz paz.jpeg" alt="Capa do single Luz Que Me Traz Paz da banda Maneva">
+                <li><a href="#">Luz Que Me Traz Paz</a></li>
+                <img src="seja para mim.jpeg" alt="Capa da música seja para mim Maneva">
+                <li><a href="#">Seja para mim</a></li>
+                <img src="saudades do tempo.jpeg" alt="música saudades do tempo Maneva">
+                <li><a href="#">Saudades do tempo</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <!-- Rodapé -->
+     
+    <footer id="rodape">
+        <p>&copy; 2025 - Maneva hits. Todos os direitos reservados.</p>
+        <footer>
+    <section class="social">
+        <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+    </section>
+</footer>
+    </footer>
+</body>
+</html>

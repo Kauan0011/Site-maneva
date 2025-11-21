@@ -10,7 +10,16 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
     <!-- Menu de controle para navegação e acessibilidade -->
     <section class="top-control">
         <nav class="nav-shortcuts">
@@ -49,6 +58,7 @@
     </nav>
 
     <!-- Conteúdo principal -->
+
     <main id="conteudo-principal">
         <section class="section1">
             <img src="tempo de paz.jpeg" alt="Capa do álbum Tempo de Paz da banda Maneva"> 
